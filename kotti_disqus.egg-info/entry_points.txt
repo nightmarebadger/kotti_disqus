@@ -1,3 +1,0 @@
-[fanstatic.libraries]
-kotti_disqus = kotti_disqus.fanstatic:library
-
