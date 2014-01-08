@@ -8,6 +8,7 @@ _ = TranslationStringFactory('kotti_disqus')
 def kotti_configure(settings):
 
     settings['pyramid.includes'] += ' kotti_disqus'
+    settings['kotti_disqus.available_types'] = "kotti.resources.Document"
 
 
 def includeme(config):
