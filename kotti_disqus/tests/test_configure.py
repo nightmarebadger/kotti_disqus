@@ -14,7 +14,6 @@ def test_kotti_configure():
     kotti_configure(settings)
 
     assert settings['pyramid.includes'] == ' kotti_disqus'
-    assert settings['kotti.available_types'] == ' kotti_disqus.resources.content_type'
 
 
 def test_includeme(config):
