@@ -1,6 +1,8 @@
-==================
+Still in development, just some very basic work done.
+
+============
 kotti_disqus
-==================
+============
 
 Content Type content type for Kotti.
 
