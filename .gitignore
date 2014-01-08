@@ -1,3 +1,4 @@
 *.db
 *.pyc
 .*
+kotti_disqus.egg-info*
