@@ -41,11 +41,6 @@ setup(
     install_requires=[
         'Kotti',
         ],
-    entry_points={
-        'fanstatic.libraries': [
-            'kotti_disqus = kotti_disqus.fanstatic:library',
-            ],
-        },
     message_extractors={
         'kotti_disqus': [
             ('**.py', 'lingua_python', None),
