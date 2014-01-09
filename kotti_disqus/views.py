@@ -3,7 +3,7 @@
 from kotti import get_settings
 from kotti.views.slots import assign_slot
 from kotti.views.util import template_api
-from kotti_settings.util import get_setting
+from kotti_settings.util import get_settings as get_settings_util
 from pyramid.exceptions import PredicateMismatch
 from pyramid.util import DottedNameResolver
 from pyramid.view import view_config
@@ -20,10 +20,11 @@ def disqus_comments_view(context, request):
         raise PredicateMismatch()
 
     api = template_api(context, request)
+    settings = get_settings_util()
     disqus_url = ''
-    disqus_shortname = get_setting('disqus_shortname')
+    disqus_shortname = settings['disqus_shortname']
 
-    base_url = get_setting('disqus_base_url').strip('/')
+    base_url = settings['disqus_base_url'].strip('/')
 
     if base_url:
         disqus_url = base_url + api.url(context)[len(request.application_url):]
