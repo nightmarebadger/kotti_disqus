@@ -22,9 +22,9 @@ def disqus_comments_view(context, request):
     api = template_api(context, request)
     settings = get_settings_util()
     disqus_url = ''
-    disqus_shortname = settings['disqus_shortname']
+    disqus_shortname = settings['kotti_disqus-disqus_shortname']
 
-    base_url = settings['disqus_base_url'].strip('/')
+    base_url = settings['kotti_disqus-disqus_base_url'].strip('/')
 
     if base_url:
         disqus_url = base_url + api.url(context)[len(request.application_url):]

@@ -19,8 +19,8 @@ def test_views(db_session, dummy_request):
     kotti_configure(get_settings())
 
     # Is shown on Document with the default URL if we do not set it
-    set_setting('disqus_shortname', 'test_shortname')
-    set_setting('disqus_base_url', '')
+    set_setting('kotti_disqus-disqus_shortname', 'test_shortname')
+    set_setting('kotti_disqus-disqus_base_url', '')
     assert disqus_comments_view(root['test-document'], dummy_request) == \
         {
             'disqus_url': 'http://example.com/test-document/',
@@ -28,7 +28,7 @@ def test_views(db_session, dummy_request):
         }
 
     # If we set the URL, it overrides the default one
-    set_setting('disqus_base_url', 'http://testing.com/')
+    set_setting('kotti_disqus-disqus_base_url', 'http://testing.com/')
     assert disqus_comments_view(root['test-document'], dummy_request) == \
         {
             'disqus_url': 'http://testing.com/test-document/',
