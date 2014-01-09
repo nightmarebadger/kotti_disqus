@@ -40,6 +40,7 @@ setup(
     zip_safe=False,
     install_requires=[
         'Kotti',
+        'kotti_settings>=0.1',
         ],
     message_extractors={
         'kotti_disqus': [

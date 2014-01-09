@@ -1,8 +1,8 @@
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'natantesting'; // required: replace example with your forum shortname
-    var disqus_url = '${api.url(context)}';
+    var disqus_shortname = '${disqus_shortname}'; // required: replace example with your forum shortname
+    var disqus_url = '${disqus_url}';
 
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
