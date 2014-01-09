@@ -9,11 +9,16 @@ def test_kotti_configure():
     settings = {
         'kotti.available_types': '',
         'pyramid.includes': '',
-        }
+        'kotti.populators': ''
+    }
 
     kotti_configure(settings)
 
     assert settings['pyramid.includes'] == ' kotti_disqus'
+    assert settings['kotti.populators'] == \
+        ' kotti_disqus.populate.populate_settings'
+    assert settings['kotti_disqus.available_types'] == \
+        'kotti.resources.Document'
 
 
 def test_includeme(config):
