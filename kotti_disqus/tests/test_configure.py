@@ -17,8 +17,6 @@ def test_kotti_configure():
     assert settings['pyramid.includes'] == ' kotti_disqus'
     assert settings['kotti.populators'] == \
         ' kotti_disqus.populate.populate_settings'
-    assert settings['kotti_disqus.available_types'] == \
-        'kotti.resources.Document'
 
 
 def test_includeme(config):

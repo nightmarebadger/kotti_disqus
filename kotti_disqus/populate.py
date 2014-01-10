@@ -9,7 +9,7 @@ from kotti_disqus import _
 from kotti_settings.util import add_settings
 
 
-def populate_settings():
+def populate_settings():  # pragma: no cover
 
     def get_types():
         foo = get_settings()['kotti.available_types']
