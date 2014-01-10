@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kotti_disqus 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-01-10 17:59+0100\n"
+"POT-Creation-Date: 2014-01-10 22:56+0100\n"
 "PO-Revision-Date: 2014-01-10 18:06+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -18,36 +18,44 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.6\n"
 
-#: kotti_disqus/populate.py:11
+#: kotti_disqus/populate.py:21
 msgid "Disqus shortname"
 msgstr ""
 
-#: kotti_disqus/populate.py:12
+#: kotti_disqus/populate.py:22
 msgid ""
-"The shortname you with which you registered your site. Required for the "
+"The shortname with which you registered your site. Required for the "
 "commenting system to work!"
 msgstr ""
 
-#: kotti_disqus/populate.py:20
+#: kotti_disqus/populate.py:29
 msgid "Base URL"
 msgstr ""
 
-#: kotti_disqus/populate.py:21
+#: kotti_disqus/populate.py:30
 msgid ""
 "Base URL for Disqus commenting system. Useful if you move your site to "
 "another URL but want to keep comments. Defaults to current application "
 "URL."
 msgstr ""
 
-#: kotti_disqus/populate.py:34
+#: kotti_disqus/populate.py:38
+msgid "Available types"
+msgstr ""
+
+#: kotti_disqus/populate.py:39
+msgid "Select the types on which you want to enable comments"
+msgstr ""
+
+#: kotti_disqus/populate.py:52
 msgid "Disqus settings"
 msgstr ""
 
-#: kotti_disqus/populate.py:35
+#: kotti_disqus/populate.py:53
 msgid "Settings for kotti_disqus"
 msgstr ""
 
-#: kotti_disqus/populate.py:36
+#: kotti_disqus/populate.py:54
 msgid "Successfully saved Disqus settings."
 msgstr ""
 
