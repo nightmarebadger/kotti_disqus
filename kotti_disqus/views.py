@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from kotti import get_settings
 from kotti.views.slots import assign_slot
 from kotti.views.util import template_api
 from kotti_settings.util import get_settings as get_settings_util
@@ -12,7 +11,8 @@ from pyramid.view import view_config
 @view_config(name="disqus_comments",
              renderer="kotti_disqus:templates/disqus_comments.pt")
 def disqus_comments_view(context, request):
-    available = get_settings().get('kotti_disqus.available_types', '').split()
+    settings = get_settings_util()
+    available = settings.get('kotti_disqus-disqus_available_types')
     resolver = DottedNameResolver(None)
     types = tuple(resolver.resolve(typ) for typ in available)
 
@@ -20,7 +20,6 @@ def disqus_comments_view(context, request):
         raise PredicateMismatch()
 
     api = template_api(context, request)
-    settings = get_settings_util()
     disqus_url = ''
     disqus_shortname = settings['kotti_disqus-disqus_shortname']
 
