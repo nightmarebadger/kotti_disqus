@@ -15,7 +15,7 @@ CHANGES = open(os.path.join(here, 'CHANGES.rst')).read()
 setup(
     name=project,
     version=version,
-    description="Disqus commenting system addon for Kotti",
+    description="Disqus commenting system add-on for Kotti",
     long_description=README + '\n\n' + CHANGES,
     classifiers=[
         "Environment :: Web Environment",
@@ -30,7 +30,7 @@ setup(
         "Topic :: Internet :: WWW/HTTP",
         "Topic :: Software Development :: User Interfaces",
         ],
-    keywords='kotti addon',
+    keywords='kotti add-on',
     author='Natan Žabkar',
     author_email='natan.zabkar@gmail.com',
     url='https://github.com/nightmarebadger/kotti_disqus',
