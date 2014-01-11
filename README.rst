@@ -40,5 +40,13 @@ You can change some settings at the settings page
 |                        | select at least one of these.                      |
 +------------------------+----------------------------------------------------+
 
+If you need to include a type not available in ``kotti.available_types`` or
+want to force an option that can never be disabled, you can do so via
+``kotti_disqus.extra_types``, such as::
+
+  kotti_disqus.extra_types =
+      kotti.resources.Document
+      kotti.resources.Image
+
 
 .. _Find out more about Kotti: http://pypi.python.org/pypi/Kotti
