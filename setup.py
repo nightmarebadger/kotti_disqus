@@ -35,7 +35,7 @@ setup(
     author_email='natan.zabkar@gmail.com',
     url='https://github.com/nightmarebadger/kotti_disqus',
     license='BSD',
-    packages=find_packages(),
+    packages=find_packages(exclude=('kotti_disqus.tests',)),
     include_package_data=True,
     zip_safe=False,
     install_requires=[
