@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kotti_disqus 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-01-10 22:56+0100\n"
-"PO-Revision-Date: 2014-01-10 23:02+0100\n"
+"POT-Creation-Date: 2014-01-11 11:11+0100\n"
+"PO-Revision-Date: 2014-01-11 11:13+0100\n"
 "Last-Translator: Natan Žabkar <natan.zabkar@gmail.com>\n"
 "Language-Team: sl <LL@li.org>\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
@@ -34,33 +34,42 @@ msgstr ""
 
 #: kotti_disqus/populate.py:29
 msgid "Base URL"
-msgstr "Osnovni URL"
+msgstr "Osnovni URL naslov"
 
 #: kotti_disqus/populate.py:30
 msgid ""
 "Base URL for Disqus commenting system. Useful if you move your site to "
 "another URL but want to keep comments. Defaults to current application URL."
 msgstr ""
-"Osnovni URL za Disqus sistem komentarjev. Uporabno če ste spletno stran "
-"premaknili na drug naslov in želite ohraniti komentarje. Privzeta vrednost "
-"je trenutno naslov. "
+"Osnovni URL naslov za Disqus sistem komentarjev. Uporabno če ste spletno "
+"stran premaknili na drug naslov in želite ohraniti komentarje. Privzeta "
+"vrednost je trenutni naslov. "
 
-#: kotti_disqus/populate.py:38
+#: kotti_disqus/populate.py:40
 msgid "Available types"
 msgstr "Možni tipi prispevkov"
 
-#: kotti_disqus/populate.py:39
-msgid "Select the types on which you want to enable comments"
-msgstr "Izberite na katerih tipih prispevkov želite omogočiti komentarje"
+#: kotti_disqus/populate.py:41
+msgid "Select the types on which you want to enable comments."
+msgstr "Izberite tipe prispevkov na katerih želite vklopiti komentarje. "
 
-#: kotti_disqus/populate.py:52
+#: kotti_disqus/populate.py:44
+msgid ""
+"Select the types on which you want to enable comments. There are some types "
+"enabled via 'kotti_disqus.extra_types' that cannot be disabled."
+msgstr ""
+"Izberite tipe prispevkov na katerih želite vklopiti komentarje. Nekateri "
+"tipi prispevkov so izbrani v 'kotti_disqus.extra_types' in se jih ne da "
+"izklopiti."
+
+#: kotti_disqus/populate.py:59
 msgid "Disqus settings"
 msgstr "Disqus nastavitve"
 
-#: kotti_disqus/populate.py:53
+#: kotti_disqus/populate.py:60
 msgid "Settings for kotti_disqus"
 msgstr "Nastavitve za kotti_disqus"
 
-#: kotti_disqus/populate.py:54
+#: kotti_disqus/populate.py:61
 msgid "Successfully saved Disqus settings."
 msgstr "Nastavitve za Disqus uspešno shranjene."

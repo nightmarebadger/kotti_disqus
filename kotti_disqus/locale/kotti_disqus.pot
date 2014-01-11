@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kotti_disqus 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-01-10 22:56+0100\n"
+"POT-Creation-Date: 2014-01-11 11:11+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,23 +37,29 @@ msgid ""
 "another URL but want to keep comments. Defaults to current application URL."
 msgstr ""
 
-#: kotti_disqus/populate.py:38
+#: kotti_disqus/populate.py:40
 msgid "Available types"
 msgstr ""
 
-#: kotti_disqus/populate.py:39
-msgid "Select the types on which you want to enable comments"
+#: kotti_disqus/populate.py:41
+msgid "Select the types on which you want to enable comments."
 msgstr ""
 
-#: kotti_disqus/populate.py:52
+#: kotti_disqus/populate.py:44
+msgid ""
+"Select the types on which you want to enable comments. There are some types "
+"enabled via 'kotti_disqus.extra_types' that cannot be disabled."
+msgstr ""
+
+#: kotti_disqus/populate.py:59
 msgid "Disqus settings"
 msgstr ""
 
-#: kotti_disqus/populate.py:53
+#: kotti_disqus/populate.py:60
 msgid "Settings for kotti_disqus"
 msgstr ""
 
-#: kotti_disqus/populate.py:54
+#: kotti_disqus/populate.py:61
 msgid "Successfully saved Disqus settings."
 msgstr ""
 

@@ -35,17 +35,16 @@ def populate_settings():  # pragma: no cover
 
     class DisqusAvailableTypesSchemaNode(SchemaNode):
         extra_types = get_settings()['kotti_disqus.extra_types'].split()
-        extra_desc_start = _(u"There are some types enabled via "
-                             u"'kotti_disqus.extra_types' that cannot be "
-                             u"disabled:")
-        extra_desc = ''
-        if extra_types:
-            extra_desc = '\n' + extra_desc_start + ' ' + ', '.join(extra_types)
 
         name = 'disqus_available_types'
         title = _(u'Available types')
         description = _(u'Select the types on which you want to enable '
-                        u'comments.') + extra_desc
+                        u'comments.')
+        if extra_types:
+            description = _(u"Select the types on which you want to enable "
+                            u"comments. There are some types enabled via "
+                            u"'kotti_disqus.extra_types' that cannot be "
+                            u"disabled.")
         missing = []
         default = extra_types
         widget = CheckboxChoiceWidget(values=get_types())
