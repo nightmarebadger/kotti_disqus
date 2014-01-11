@@ -26,8 +26,8 @@ You can change some settings at the settings page
 +------------------------+----------------------------------------------------+
 | Option                 | Explanation                                        |
 +========================+====================================================+
-| Disqus Shortname       | The shortname you registered at Disqus. Necessary  |
-|                        | for the commenting system to work!                 |
+| Disqus Shortname       | The shortname you registered at Disqus.            |
+|                        | **Necessary for the commenting system to work!**   |
 +------------------------+----------------------------------------------------+
 | Disqus Base URL        | Change the base URL - useful if you move your site |
 |                        | to another URL but want to keep your comments.     |
@@ -35,9 +35,9 @@ You can change some settings at the settings page
 +------------------------+----------------------------------------------------+
 | Disqus Available Types | Select the types on which you want to enable       |
 |                        | comments. You can select from all types available  |
-|                        | to Kotti via ``kotti.available_types``. If nothing |
-|                        | is selected, comments won't appear so be sure to   |
-|                        | select at least one of these.                      |
+|                        | to Kotti via ``kotti.available_types``. **If       |
+|                        | nothing is selected, comments won't appear so be   |
+|                        | sure to select at least one of these.**            |
 +------------------------+----------------------------------------------------+
 
 If you need to include a type not available in ``kotti.available_types`` or
