@@ -11,6 +11,8 @@ def kotti_configure(settings):
 
     settings['pyramid.includes'] += ' kotti_disqus'
     settings['kotti.populators'] += ' kotti_disqus.populate.populate_settings'
+    if 'kotti_disqus.extra_types' not in settings.keys():
+        settings['kotti_disqus.extra_types'] = ''
 
 
 def includeme(config):

@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+from kotti import get_settings
 from kotti.views.slots import assign_slot
 from kotti.views.util import template_api
 from kotti_settings.util import get_settings as get_settings_util
@@ -12,7 +13,9 @@ from pyramid.view import view_config
              renderer="kotti_disqus:templates/disqus_comments.pt")
 def disqus_comments_view(context, request):
     settings = get_settings_util()
-    available = settings.get('kotti_disqus-disqus_available_types')
+    available = settings.get('kotti_disqus-disqus_available_types', [])
+    available += get_settings()['kotti_disqus.extra_types'].split()
+
     resolver = DottedNameResolver(None)
     types = tuple(resolver.resolve(typ) for typ in available)
 
