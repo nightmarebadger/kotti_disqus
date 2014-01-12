@@ -3,3 +3,4 @@
 .*
 kotti_disqus.egg-info*
 build
+dist
